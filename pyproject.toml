@@ -1,0 +1,27 @@
+[project]
+name = "my-gpt"
+version = "0.1.0"
+description = "A decoder-only transformer (GPT) built from scratch"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+
+dependencies = [
+    "torch>=2.13.0,<3",
+    "numpy>=2.5.2,<3",
+    "tiktoken>=0.14.0,<1",
+    "matplotlib>=3.11.1,<4",
+    "tqdm>=4.70.0,<5",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14",
+    "pytest>=8.0",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.uv]
+# Use uv's native Python instead of an incompatible system install.
+python-preference = "only-managed"

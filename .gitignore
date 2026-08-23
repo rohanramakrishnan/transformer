@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Data & artifacts — regenerate with data/prepare.py, don't commit
+data/*.txt
+data/*.bin
+data/vocab.json
+out/
+checkpoints/
+*.pt
+*.ckpt
+
+# Logs & plots
+*.log
+wandb/
+runs/
+*.png
+
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/
